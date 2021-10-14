@@ -1,14 +1,21 @@
 char* reverseLeftWords(char* s, int n){
-    int len,i,j;
+    int i,len;
     len=strlen(s);
-    j=0;
-    char *q=(char *)malloc(sizeof(char)*(len+1));
-    for(i=n;i<len;i++){
-        q[j++]=s[i];
+    char q;
+    for(i=0;i<n/2;i++){
+        q=s[i];
+        s[i]=s[n-i-1];
+        s[n-i-1]=q;
     }
-    for(i=0;i<n;i++){
-        q[j++]=s[i];
+    for(i=n;i<(len+n)/2;i++){
+        q=s[i];
+        s[i]=s[len-i+n-1];
+        s[len-i+n-1]=q;
     }
-    q[j]='\0';
-    return q;
+    for(i=0;i<(len)/2;i++){
+        q=s[i];
+        s[i]=s[len-i-1];
+        s[len-i-1]=q;
+    }
+    return s;
 }
