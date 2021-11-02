@@ -5,7 +5,7 @@ int lengthOfLongestSubstring(char* s){
     int i,j,max;
     int map[128];
     //存储每个字符最后出现的位置
-    sum=max=0;
+    max=0;
     for(j=0;j<128;j++)
         map[j]=-1;
     j=0;
