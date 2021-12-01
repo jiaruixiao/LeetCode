@@ -4,6 +4,8 @@ struct node{
 };
 
 int lastRemaining(int n, int m){
+    // if(m==1)
+    //     return n-1;
     // struct node *head=(struct node*)malloc(sizeof(struct node));
     // struct node *p=head;
     // int i;
