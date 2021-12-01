@@ -13,22 +13,20 @@ int lastRemaining(int n, int m){
     //     p->val=i;
     // }
     // p->next=head->next;
-    // struct node *q=head->next;
-    // i=1;
-    // int j=n;
-    // while(j>=1){
-    //     q=q->next;
-    //     i++;
-    //     if(i==m-1){
-    //         printf("%d,",q->next->val);
-    //         q->next=q->next->next;
-    //         i=0;
-    //         j--;
+    // p=head->next;
+    // struct node *q=(struct node*)malloc(sizeof(struct node));
+    // while(p->next!=p){
+    //     for(i=1;i<m;i++){
+    //         q=p;
+    //         p=p->next;
     //     }
+    //     q->next=p->next;
+    //     free(p);
+    //     p=q->next;
     // }
-    // return q->val;
+    // return p->val;
 
-    //while m=2,TIMEOUT!
+    while m=2,TIMEOUT!
     int x=0;
     int i=0;
     for(i=2;i<=n;i++)
