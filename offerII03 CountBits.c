@@ -10,3 +10,4 @@ int* countBits(int n, int* returnSize){
     }
     return res;
 }
+//二进制和移位的妙用
