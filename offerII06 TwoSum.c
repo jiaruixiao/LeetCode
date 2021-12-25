@@ -20,5 +20,6 @@ int* twoSum(int* numbers, int numbersSize, int target, int* returnSize){
             return res;
         }
     }
-    return res;
+    *returnSize=0;
+    return NULL;
 }
